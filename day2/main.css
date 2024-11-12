@@ -28,16 +28,97 @@
 .wrapper {
     position: relative;
     width: 80px;
-    height: 55px;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
-.line {
+.line1 {
+    position: absolute;
+    top: 16px;
     background: rgb(255, 255, 255);
     width: 80px;
     height: 8px;
     border-radius: 4px;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
+
+.line2 {
+    position: absolute;
+    top: 36px;
+    background: rgb(255, 255, 255);
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.line3 {
+    position: absolute;
+    top: 56px;
+    background: rgb(255, 255, 255);
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.line1-l-r {
+    transform: rotate(45deg);
+    top: 40px;
+}
+
+.line3-r-l {
+    transform: rotate(-45deg);
+    top: 40px;
+}
+
+
+.line2-hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
