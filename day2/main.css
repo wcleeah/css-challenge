@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: rgb(96, 173, 133);
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+}
+
+.line {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.line1 {
+    top: 16px;
+}
+
+.line2 {
+    top: 36px;
+}
+
+.line3 {
+    top: 56px;
+}
+
+.move-up-and-rotate-clockwise {
+    animation: move-up 0.7s linear forwards, rotate-clockwise 0.7s linear 0.7s forwards;
+}
+
+.move-down-and-rotate-anti-clockwise {
+    animation: move-down 0.7s linear forwards, rotate-anti-clockwise 0.7s linear 0.7s forwards;
+}
+
+.rotate-anti-clockwise {
+    animation-duration: 0.7s;
+    animation-name: rotate-anti-clockwise;
+    animation-timing-function: linear;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-up {
+    0% {
+        top: 16px;
+    }
+    100% {
+        top: 36px;
+    }
+}
+
+@keyframes move-down {
+    0% {
+        top: 56px;
+    }
+    100% {
+        top: 36px;
+    }
+}
+
+@keyframes rotate-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotate-anti-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
